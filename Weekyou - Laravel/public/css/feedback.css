@@ -1,0 +1,536 @@
+
+
+ body{
+      overflow: hidden;
+      background-color: rgb(239, 241, 244);
+      font-family: 'Muli', sans-serif;
+  }
+
+  canvas{
+      background-color: white;
+      box-shadow: 2px 2px 5px #999;
+
+      border: 0px !important;
+  }
+
+  .main{
+      margin-top: 2vh;
+  }
+  .input{
+      padding-left: 1vw;
+      padding-right: 0.5vw;
+      margin-bottom: 1vh !important;
+      display: flex;
+      align-items: center;
+
+  }
+input{
+    border: 0px;
+    border-bottom: 1px solid #999;
+    margin-left: 1vw;
+    margin-right: 1vw;
+
+
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.divImgAttach{
+    align-items: center;
+display: flex;
+justify-content: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    box-sizing: border-box;
+    width: 280px;
+
+}
+.divImgAttach img {
+    max-width: 100%;
+    max-height: 100px;
+}
+
+.input span {
+
+    float: left;
+    width: 10%;
+}
+.input textarea{
+    float: left;
+    width: 70%;
+    border: 0px;
+    border-bottom: 1px solid black;
+}
+
+
+
+
+#menu{
+    margin-left: 1vw;
+    box-shadow: 2px 2px 5px #999;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    width: 280px;
+    height: 700px;
+    display: block;
+    float: left;
+    background-color: white;
+}
+
+#menu h3 {
+    justify-content: center;
+    display: flex;
+}
+i{
+    border: 0px;
+}
+button{
+    display: block;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    width: 46.66px;
+    background: #39D2B4;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    transition: all .4s;
+    border: 0px;
+    cursor: pointer;
+    float: left;
+    justify-content: center;
+}
+
+
+.buttons-header {
+    box-shadow: 2px 2px 5px #999;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(98, 224, 195);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 30px;
+    padding-top: 0.2vh;
+    padding-bottom: 0.2vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-decoration: none;
+    height: 24px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 500;
+    color: rgb(58, 193, 162);
+    margin-right: 1.4vw;
+}
+
+header{
+    margin-top: 1vh;
+}
+
+#commentBox{
+    margin-top: 1vh;
+    height: 50%;
+    overflow: scroll;
+    overflow-x: hidden;
+
+
+}
+
+#color1{
+    color: black;
+}
+
+#color2{
+    color: red;
+}
+
+#color3{
+    color: blue;
+}
+#color4{
+    color: green;
+}
+
+#btnAddCom{
+    width: 280px !important;
+    overflow: hidden;
+}
+
+textarea{
+    margin-left:0.81vw;
+    margin-right: 0.8vw;
+}
+
+.dropdownContent{
+    box-shadow: 2px 2px 5px #999;
+    z-index: 999;
+    width: 46px;
+    background-color: white;
+    position: absolute;
+    right: 157px;
+    top: 137px;
+
+}
+
+@media(max-width: 1400px){
+    .divImgAttach{
+        align-items: center;
+    display: flex;
+    justify-content: center;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        box-sizing: border-box;
+        width: 280px;
+
+    }
+    .dropdownContent{
+        box-shadow: 2px 2px 5px #999;
+        z-index: 999;
+        width: 46.66px;
+        background-color: white;
+        position: absolute;
+        right: 204px;
+        top: 137px;
+
+    }
+
+    .input img{
+        margin-top: 2vh;
+        display: block;
+    }
+    #menu{
+        margin-left: 1vw;
+        box-shadow: 2px 2px 5px #999;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        width: 280px;
+        height: 562px;
+        display: block;
+        float: left;
+        background-color: white;
+    }
+
+    #menu h3 {
+        justify-content: center;
+        display: flex;
+    }
+    i{
+        border: 0px;
+    }
+    button{
+        display: block;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        width: 46.66px;
+        background: #39D2B4;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1em;
+        transition: all .4s;
+        border: 0px;
+        cursor: pointer;
+        float: left;
+        justify-content: center;
+    }
+
+
+    .buttons-header {
+        box-shadow: 2px 2px 5px #999;
+        background-color: rgb(255, 255, 255);
+        border-color: rgb(98, 224, 195);
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 30px;
+        padding-top: 0.4vh;
+        padding-bottom: 0.4vh;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        text-decoration: none;
+        height: 28px;
+        font-family: 'Muli', sans-serif;
+        font-weight: 500;
+        color: rgb(58, 193, 162);
+        margin-right: 1.4vw;
+    }
+
+    header{
+        margin-top: 2vh;
+    }
+
+    #commentBox{
+        margin-top: 1vh;
+
+    }
+
+    #btnAddCom{
+        width: 280px !important;
+    }
+
+}
+
+
+@media(max-width: 1280px){
+    .dropdownContent{
+        box-shadow: 2px 2px 5px #999;
+        z-index: 999;
+        width: 33.33px;
+        background-color: white;
+        position: absolute;
+        right: 160px;
+        top: 137px;
+
+    }
+    .divImgAttach{
+        align-items: center;
+    display: flex;
+    justify-content: center;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        box-sizing: border-box;
+        width: 200px;
+
+    }
+    #menu{
+        margin-left: 1vw;
+        box-shadow: 2px 2px 5px #999;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        width: 200px;
+        height: 562px;
+        display: block;
+        float: left;
+        background-color: white;
+    }
+
+    #menu h3 {
+        justify-content: center;
+        display: flex;
+    }
+    i{
+        border: 0px;
+    }
+    button{
+        display: block;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        width: 33.33px;
+        background: #39D2B4;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1em;
+        transition: all .4s;
+        border: 0px;
+        cursor: pointer;
+        float: left;
+        justify-content: center;
+    }
+
+
+    .buttons-header {
+        box-shadow: 2px 2px 5px #999;
+        background-color: rgb(255, 255, 255);
+        border-color: rgb(98, 224, 195);
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 30px;
+        padding-top: 0.4vh;
+        padding-bottom: 0.4vh;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        text-decoration: none;
+        height: 28px;
+        font-family: 'Muli', sans-serif;
+        font-weight: 500;
+        color: rgb(58, 193, 162);
+        margin-right: 1.4vw;
+    }
+
+    header{
+        margin-top: 2vh;
+    }
+
+    #commentBox{
+        margin-top: 1vh;
+
+    }
+
+    #btnAddCom{
+        width: 200px !important;
+    }
+
+}
+
+
+
+@media(max-width: 1000px){
+    .dropdownContent{
+        box-shadow: 2px 2px 5px #999;
+        z-index: 999;
+        width: 33.33px;
+        background-color: white;
+        position: absolute;
+        right: 180px;
+        top: 147px;
+
+    }
+    .divImgAttach{
+        align-items: center;
+    display: flex;
+    justify-content: center;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        box-sizing: border-box;
+        width: 200px;
+
+    }
+    #menu{
+        margin-left: 1vw;
+        box-shadow: 2px 2px 5px #999;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        width: 200px;
+        height: 394px;
+        display: block;
+        float: left;
+        background-color: white;
+    }
+
+    #menu h3 {
+        justify-content: center;
+        display: flex;
+    }
+    i{
+        border: 0px;
+    }
+    button{
+        display: block;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        width: 33.33px;
+        background: #39D2B4;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1em;
+        transition: all .4s;
+        border: 0px;
+        cursor: pointer;
+        float: left;
+        justify-content: center;
+    }
+
+
+    .buttons-header {
+        box-shadow: 2px 2px 5px #999;
+        background-color: rgb(255, 255, 255);
+        border-color: rgb(98, 224, 195);
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 30px;
+        padding-top: 0.4vh;
+        padding-bottom: 0.4vh;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        text-decoration: none;
+        height: 28px;
+        font-family: 'Muli', sans-serif;
+        font-weight: 500;
+        color: rgb(58, 193, 162);
+        margin-right: 1.4vw;
+    }
+
+    header{
+        margin-top: 2vh;
+    }
+
+    #commentBox{
+        margin-top: 1vh;
+
+    }
+
+    #btnAddCom{
+        width: 200px !important;
+    }
+
+}
+
+.modal-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: table;
+    transition: opacity .3s ease;
+  }
+
+  .modal-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .modal-container {
+    width: 300px;
+    margin: 0px auto;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+    transition: all .3s ease;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  .modal-header h3 {
+    margin-top: 0;
+    color: #42b983;
+  }
+
+  .modal-body {
+    margin: 20px 0;
+  }
+
+  .modal-default-button {
+    float: right;
+  }
+
+  /*
+   * The following styles are auto-applied to elements with
+   * transition="modal" when their visibility is toggled
+   * by Vue.js.
+   *
+   * You can easily play with the modal transition by editing
+   * these styles.
+   */
+
+  .modal-enter {
+    opacity: 0;
+  }
+
+  .modal-leave-active {
+    opacity: 0;
+  }
+
+  .modal-enter .modal-container,
+  .modal-leave-active .modal-container {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+
+  select{
+      width: 70%;
+      height: 6%;
+      margin-bottom: 1%;
+      border: 0px;
+      border-radius: 3%;
+  }
+
+  label{
+      margin-left: 3%;
+
+  }
+
+  #clientSelect{
+      margin-left: 3%;
+  }

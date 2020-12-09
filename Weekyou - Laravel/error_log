@@ -1,0 +1,2 @@
+[02-Feb-2020 13:38:44 UTC] PHP Fatal error:  Cannot redeclare App\Providers\AppServiceProvider::boot() in /home/r4gau11eek7c/public_html/developments/Adelie/Archelier/app/Providers/AppServiceProvider.php on line 28
+[02-Feb-2020 13:48:55 UTC] PHP Fatal error:  Cannot redeclare App\Providers\AppServiceProvider::boot() in /home/r4gau11eek7c/public_html/developments/Adelie/Archelier/app/Providers/AppServiceProvider.php on line 33

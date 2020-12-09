@@ -1,0 +1,1553 @@
+
+*{
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+
+}
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+#btnOpenAddProjetc{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    border: 2px solid #62dfc2;
+    border-radius: 30px;
+    padding: 1%;
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+z-index: 1;
+}
+
+#btnModalEditProject{
+    position: absolute;
+    bottom: 13%;
+    right: 13%;
+    width: 5vw;
+    border: 2px solid #62dfc2;
+    border-radius: 30px;
+    padding: 1%;
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+z-index: 1;
+}
+
+  #btnOpenAddProjetc:focus {
+    outline: none;
+  }
+  #addList{
+
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    height: 30%;
+    border-radius: 10px;
+  }
+  #btnAddList{
+    margin-left: 15%;
+    margin-right: 10%;
+    width: 70%;
+    padding: 2%;
+    border-radius: 10px;
+    background-color: #62dfc2;
+    color: #fff;
+    border: #62dfc2;
+  }
+  #addList input{
+    border: 0px;
+    text-align: center;
+    border-bottom: 1px solid darkgray;
+    height: 30%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+    width: 70%;
+  }
+  #boxAddProjectModal{
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 1%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    z-index: 900;
+  }
+  #addProject{
+      padding: 2%;
+    border: 0px;
+    text-align: center;
+    border-bottom: 1px solid darkgray;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 100%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 10%;
+    width: 30%;
+  }
+
+  #boxEditProjectModal{
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 1%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    z-index: 900;
+  }
+  #editProject{
+      padding: 2%;
+    border: 0px;
+    text-align: center;
+    border-bottom: 1px solid darkgray;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 100%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 10%;
+    width: 30%;
+  }
+  #headerAddProject{
+      width: 100%;
+      height: 12%;
+      margin-bottom: 10%;
+      border-bottom: 1px solid darkgray;
+  }
+  #headerAddProject span{
+    font-size: 2rem;
+  }
+  #headerEditProject{
+    width: 100%;
+    height: 8%;
+    margin-bottom: 5%;
+    border-bottom: 1px solid darkgray;
+}
+#headerEditProject span{
+  font-size: 1.8rem;
+
+}
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+  }
+  #btnSaveAddProject{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 70%;
+    padding: 2%;
+    border-radius: 10px;
+    background-color: #62dfc2;
+    color: #fff;
+    border: #62dfc2;
+  }
+  #btnSaveEditProject{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 70%;
+    padding: 2%;
+    border-radius: 10px;
+    background-color: #62dfc2;
+    color: #fff;
+    border: #62dfc2;
+  }
+  .inputInline{
+      color: black;
+    border: 0px;
+    text-align: center;
+    border-bottom: 1px solid darkgray;
+    height: 8%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    width: 70% !important;
+  }
+#boxModalProject {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 5%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+#addViewModal{
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 5%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+#addListModal{
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 5%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+#addTaskModal{
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 5%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+#modalTask{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    height: 70%;
+    border-radius: 10px;
+}
+#modalView{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    height: 70%;
+    border-radius: 10px;
+}
+/* Modal Content */
+#modalProject {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 90%;
+    border-radius: 10px;
+}
+#headerModalProject{
+    height: 12%;
+    width: 100%;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #fff;
+    border:0px;
+    border-bottom: 1px solid darkgray;
+    margin-bottom: 1rem;
+}
+
+#leaderModalProject{
+    float:right;
+}
+#boxImgModalProject{
+    width: 100%;
+    max-height: 50%;
+    border: 1px solid darkgray;
+    display: inline-block;
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+#boxImgModalProject:hover{
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#boxImgs{
+    display: inline-block;
+    width: 30%;
+    height: 90%;
+}
+.img-d-block{
+    width: 100%;
+    max-height: 100% !important;
+    display: inline-block;
+    margin: 0px !important;
+    height: auto !important;
+}
+#boxViewsModalProject{
+    width: 100%;
+    height: 45%;
+    display: inline-block;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.viewModalProject{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    overflow: hidden;
+    margin-bottom: 4px;
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+.viewModalProject:hover{
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#addViewModalBox{
+    background-color: #fff;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+.add{
+    float: left;
+    cursor: pointer;
+    color: #62dfc2;
+    font-size: 2rem;
+}
+.imgViewModalProjects{
+    height: 100%;
+    display: inline-block;
+    width: auto;
+}
+.titleViewModalProjects{
+    width: 50%;
+    text-align: right;
+}
+#boxTaskModalProject{
+    position: relative;
+    top: -50px;
+    height: 80%;
+    width: 66%;
+    margin-left: 3%;;
+    display: inline-block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.listTaskModalProject{
+    padding-left: 2.5%;
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+    margin-right: 3%;
+    float: left;
+}
+
+.titleListTaskModalProject{
+    font-size: 1.3rem;
+    display: inline-block;
+    height: 8%;
+    width: 100%;
+    text-align: center;
+}
+.tasksModalProject{
+    border: 2px solid darkgrey;
+    display: inline-block;
+    height: 10%;
+    width: 100%;
+    margin-bottom: 3%;
+    float: left;
+}
+.titleTaskModalProject{
+    display: inline-block;
+    width: 75%;
+    height: 80%;
+    padding: 3%;
+    padding-left: 10px;
+    font-size: 0.9rem;
+}
+.devTaskModalProject{
+    text-transform: uppercase;
+    display: inline-block;
+    width: 20%;
+    height: 80%;
+    padding: 3%;
+    font-size: 0.9rem;
+}
+
+/* End Modal Content */
+body{
+    background-color: #eff1f4;
+}
+header{
+    margin-bottom: 20px;
+    height: 60px;
+    padding: 20px;
+    background-color: #eff1f4;
+
+}
+.marginHeaderBtn{
+    margin-left: 1000px !important;
+}
+.here{
+    font-size: 0.9rem;
+    margin-left: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-decoration: none;
+    background-color: #62dfc2;
+    color: #fff !important;
+    border: 2px solid #62dfc2;
+    height: 20px;
+    width: 80px;
+    border-radius: 15px ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+a:hover {
+    text-decoration: none;
+  }
+.linkHeader{
+    font-size: 0.9rem;
+    margin-left: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 0px;
+    padding-bottom: 2px;
+    text-decoration: none;
+    color: #62dfc2 !important;
+    border: 2px solid #62dfc2;
+    border-radius: 15px ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#userLogo{
+    margin-right: 30px;
+    background-color: #62dfc2;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+#boxUserLogo{
+    display: none;
+    position: absolute;
+    top: 60px;
+    z-index: 999;
+	max-width: 30em;
+    background-color: #fff;
+    color: #62dfc2;
+	padding: 1.125em 1.5em;
+	font-size: 1.25em;
+	border-radius: 1rem;
+    box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+}
+#boxUserLogo::before {
+    content: '';
+    z-index: 999;
+	position: absolute;
+	width: 0;
+	height: 0;
+	bottom: 100%;
+	left: 30%;
+	border: .75rem solid transparent;
+	border-top: none;
+	border-bottom-color: #fff;
+	filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
+}
+
+
+
+.boxProject{
+    display: inline-block;
+    width:350px;
+    height: 90vh;
+}
+#box1{
+    position: absolute;
+    left: 24px;
+}
+#box2{
+    position: absolute;
+    left: 398px;
+}
+#box3{
+    position: absolute;
+    left: 772px;
+}
+#box4{
+    position: absolute;
+    left: 1146px;
+}
+#box5{
+    position: absolute;
+    left: 1520px;
+}
+h3{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.list-group{
+    display: block;
+    height: 85vh;
+    overflow-y: scroll;
+}
+.list-group-item{
+    background-color: #eff1f4;
+    border: 0px !important;
+
+}
+.clientText{
+    width: 150px;
+    display: inline-block;
+    padding-left: 15px;
+    font-size: 1rem;
+    color: darkgray;
+    height: 20px;
+    word-break: break-all;
+}
+.projectText{
+    text-align: right;
+    width: 150px;
+    display: inline-block;
+    padding-right: 15px;
+}
+.boxInfoProjects{
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px;
+    min-height: 200px;
+    border: 5px solid #62dfc2;
+    border-radius: 2%;
+}
+.boxImg1{
+    width: 150px;
+    height: 85px;
+    display: inline-block;
+    float: left;
+}
+.boxImg2{
+    width: 140px;
+    height: 85px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+img{
+    margin-bottom: 2px;
+    width: 70px;
+    height: 42px;
+}
+.imgDash{
+    width: 140px;
+    height: 90px;
+}
+.taskLabelProject{
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+.label1{
+    width: 70px;
+    display: inline-block;
+    font-size: 0.7rem;
+    color: darkgray;
+    text-align: center;
+    position: relative;
+    bottom: 13px;
+}
+.label2{
+    padding-left: 5px;
+    padding-top: 8px;
+    width: 160px;
+    display: inline-block;
+    font-size: 1rem;
+    color: black;
+    height: 40px;
+    word-break: break-all;
+}
+.label3{
+    width: 40px;
+    display: inline-block;
+    font-size: 0.7rem;
+    color: darkgray;
+    text-align: center;
+    position: relative;
+    bottom: 8px;
+    height: 20px;
+    word-break: break-all;
+}
+
+#vl1 {
+    position: absolute;
+    border-left: 2px solid grey;
+    left: 384px;
+    height: 85vh;
+    top: 90px;
+}
+#vl2 {
+    position: absolute;
+    border-left: 2px solid grey;
+    left: 760px;
+    height: 85vh;
+    top: 90px;
+}
+#vl3 {
+    position: absolute;
+    border-left: 2px solid grey;
+    left: 1135px;
+    height: 85vh;
+    top: 90px;
+}
+#vl4 {
+    position: absolute;
+    border-left: 2px solid grey;
+    left: 1510px;
+    height: 85vh;
+    top: 90px;
+}
+
+@media (max-width: 1366px){
+    .marginHeaderBtn{
+        margin-left: 600px !important;
+    }
+    .boxProject{
+    display: inline-block;
+    width:250px;
+    }
+    #box1{
+        position: absolute;
+        left: 16px;
+    }
+    #box2{
+        position: absolute;
+        left: 282px;
+    }
+    #box3{
+        position: absolute;
+        left: 548px;
+    }
+    #box4{
+        position: absolute;
+        left: 814px;
+    }
+    #box5{
+        position: absolute;
+        left: 1090px;
+    }
+    h3{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .list-group{
+        display: block;
+        height: 85vh;
+        overflow-y: scroll;
+    }
+    .list-group-item{
+        border: 0px !important;
+    }
+    .clientText{
+        width: 90px;
+        display: inline-block;
+        padding-left: 15px;
+        font-size: 0.8rem;
+        color: darkgray;
+    }
+    .projectText {
+        text-align: right;
+        width: 100px;
+        display: inline-block;
+        padding-right: 15px;
+        font-size: 0.8rem;
+    }
+    .boxInfoProjects{
+        padding: 5px;
+        min-height: 100px;
+        border: 5px solid #62dfc2;
+        border-radius: 2%;
+    }
+    .boxImg1{
+        display: none;
+    }
+    .boxImg2{
+        align-content: center;
+        width: 190px;
+        display: inline-block;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    img{
+        display:none;
+    }
+    .imgDash{
+        display: inline-block;
+        max-width: 210px;
+        height: auto;
+    }
+    .taskLabelProject {
+        height: 30px;
+        border: 1px solid #d4d3d3;
+        border-radius: 2px;
+        margin-bottom: 10px;
+    }
+    .label1 {
+        width: 40px;
+        display: inline-block;
+        font-size: 0.4rem;
+        color: darkgray;
+        text-align: center;
+        position: relative;
+        bottom: 0px;
+    }
+
+    .label2{
+
+        width: 100px;
+        display: inline-block;
+        font-size: 0.5rem;
+        color: black;
+        height: 20px;
+        word-break: break-all;
+    }
+    .label3{
+        width: 30px;
+        display: inline-block;
+        font-size: 0.4rem;
+        word-break: break-all;
+        height: 10px;
+        color: darkgray;
+        text-align: center;
+        position: relative;
+        bottom: 0px;
+    }
+    #vl1 {
+        position: absolute;
+        border-left: 2px solid grey;
+        left: 270px;
+        height: 89vh;
+        top: 90px;
+    }
+    #vl2 {
+        position: absolute;
+        border-left: 2px solid grey;
+        left: 540px;
+        height: 89vh;
+        top: 90px;
+    }
+    #vl3 {
+        position: absolute;
+        border-left: 2px solid grey;
+        left: 810px;
+        height: 89vh;
+        top: 90px;
+    }
+    #vl4 {
+        position: absolute;
+        border-left: 2px solid grey;
+        left: 1080px;
+        height: 89vh;
+        top: 90px;
+    }
+}
+@media (max-width: 1366px) and (max-height: 768px){
+
+    .marginHeaderBtn{
+        margin-left: 600px !important;
+    }
+    h3{
+        font-size: 1.5rem;
+        color: black;
+    }
+    .list-group{
+        display: block;
+        height: 80vh;
+        overflow-y: scroll;
+    }
+    #vl1 {
+        position: absolute;
+        border-left: 1px solid grey;
+        left: 270px;
+        height: 85vh;
+        top: 90px;
+    }
+    #vl2 {
+        position: absolute;
+        border-left: 1px solid grey;
+        left: 540px;
+        height: 85vh;
+        top: 90px;
+    }
+    #vl3 {
+        position: absolute;
+        border-left: 1px solid grey;
+        left: 810px;
+        height: 85vh;
+        top: 90px;
+    }
+    #vl4 {
+        position: absolute;
+        border-left: 1px solid grey;
+        left: 1080px;
+        height: 85vh;
+        top: 90px;
+    }
+}
+@media (max-width: 1024px){
+    .listTaskModalProject{
+        width: 35% !important;
+    }
+    .titleViewModalProjects{
+        width: 40% !important;
+    }
+    .titleTaskModalProject{
+        font-size: 0.7rem;
+    }
+    .tasksModalProject{
+        padding-top: 3%;
+    }
+    .devTaskModalProject{
+        font-size: 0.7rem;
+    }
+    .marginHeaderBtn{
+        margin-left: 280px !important;
+    }
+    .boxProject{
+    display: inline-block;
+    width:200px;
+    }
+    #box1{
+        position: absolute;
+        left: 3px;
+    }
+    #box2{
+        position: absolute;
+        left: 206px;
+    }
+    #box3{
+        position: absolute;
+        left: 409px;
+    }
+    #box4{
+        position: absolute;
+        left: 612px;
+    }
+    #box5{
+        position: absolute;
+        left: 815px;
+    }
+    h3{
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .list-group{
+        display: block;
+        height: 85vh;
+        overflow-y: scroll;
+    }
+    .list-group-item{
+        border: 0px !important;
+    }
+    .clientText{
+        width: 70px;
+        display: inline-block;
+        padding-left: 10px;
+        font-size: 0.6rem;
+        color: darkgray;
+    }
+    .projectText {
+        text-align: right;
+        width: 80px;
+        display: inline-block;
+        padding-right: 10px;
+        font-size: 0.6rem;
+    }
+    .boxInfoProjects{
+        padding: 5px;
+        min-height: 100px;
+        border: 5px solid #62dfc2;
+        border-radius: 2%;
+    }
+    .boxImg1{
+        display: none;
+    }
+    .boxImg2{
+        align-content: center;
+        width: 140px;
+        display: inline-block;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    img{
+        display:none;
+    }
+    .imgDash{
+        display: inline-block;
+        max-width: 210px;
+        height: auto;
+    }
+    .taskLabelProject {
+        height: 30px;
+        border: 1px solid #d4d3d3;
+        border-radius: 2px;
+        margin-bottom: 10px;
+    }
+    .label1 {
+        width: 40px;
+        display: inline-block;
+        font-size: 0.4rem;
+        color: darkgray;
+        text-align: center;
+        position: relative;
+        bottom: 1px;
+    }
+
+    .label2{
+
+        width: 65px;
+        display: inline-block;
+        font-size: 0.5rem;
+        color: black;
+        height: 20px;
+        word-break: break-all;
+    }
+    .label3{
+        width: 20px;
+        display: inline-block;
+        font-size: 0.4rem;
+        word-break: break-all;
+        height: 10px;
+        color: darkgray;
+        text-align: center;
+        position: relative;
+        bottom: 0px;
+    }
+    #vl1 {
+        position: absolute;
+        border-left: 2px solid grey;
+        left: 203px;
+        height: 89vh;
+        top: 90px;
+    }
+    #vl2 {
+        position: absolute;
+        border-left: 2px solid grey;
+        left: 406px;
+        height: 89vh;
+        top: 90px;
+    }
+    #vl3 {
+        position: absolute;
+        border-left: 2px solid grey;
+        left: 609px;
+        height: 89vh;
+        top: 90px;
+    }
+    #vl4 {
+        position: absolute;
+        border-left: 2px solid grey;
+        left: 812px;
+        height: 89vh;
+        top: 90px;
+    }
+}
+
+@media (max-width: 1280px) and (max-height: 800px){
+    .marginHeaderBtn{
+        margin-left: 500px !important;
+    }
+    .boxProject{
+    display: inline-block;
+    width:250px;
+    }
+    #box1{
+        position: absolute;
+        left: 4px;
+    }
+    #box2{
+        position: absolute;
+        left: 258px;
+    }
+    #box3{
+        position: absolute;
+        left: 512px;
+    }
+    #box4{
+        position: absolute;
+        left: 766px;
+    }
+    #box5{
+        position: absolute;
+        left: 1020px;
+    }
+    h3{
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .list-group{
+        display: block;
+        height: 85vh;
+        overflow-y: scroll;
+    }
+    .list-group-item{
+        border: 0px !important;
+    }
+    .clientText{
+        width: 90px;
+        display: inline-block;
+        padding-left: 10px;
+        font-size: 0.6rem;
+        color: darkgray;
+    }
+    .projectText {
+        text-align: right;
+        width: 100px;
+        display: inline-block;
+        padding-right: 10px;
+        font-size: 0.6rem;
+        height: 20px;
+    }
+    .boxInfoProjects{
+        padding: 5px;
+        min-height: 100px;
+        border: 5px solid #62dfc2;
+        border-radius: 2%;
+    }
+    .boxImg1{
+        display: none;
+    }
+    .boxImg2{
+        align-content: center;
+        width: 190px;
+        display: inline-block;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    img{
+        display:none;
+    }
+    .imgDash{
+        display: inline-block;
+        max-width: 210px;
+        height: auto;
+    }
+    .taskLabelProject {
+        height: 30px;
+        border: 1px solid #d4d3d3;
+        border-radius: 2px;
+        margin-bottom: 10px;
+    }
+    .label1 {
+        width: 40px;
+        display: inline-block;
+        font-size: 0.4rem;
+        color: darkgray;
+        text-align: center;
+        position: relative;
+        bottom: 1px;
+    }
+
+    .label2{
+
+        width: 100px;
+        display: inline-block;
+        font-size: 0.5rem;
+        color: black;
+        height: 20px;
+        word-break: break-all;
+    }
+    .label3{
+        width: 30px;
+        display: inline-block;
+        font-size: 0.4rem;
+        word-break: break-all;
+        height: 10px;
+        color: darkgray;
+        text-align: center;
+        position: relative;
+        bottom: 0px;
+    }
+    #vl1 {
+        position: absolute;
+        border-left: 2px solid grey;
+        left: 254px;
+        height: 89vh;
+        top: 90px;
+    }
+    #vl2 {
+        position: absolute;
+        border-left: 2px solid grey;
+        left: 507px;
+        height: 89vh;
+        top: 90px;
+    }
+    #vl3 {
+        position: absolute;
+        border-left: 2px solid grey;
+        left: 763px;
+        height: 89vh;
+        top: 90px;
+    }
+    #vl4 {
+        position: absolute;
+        border-left: 2px solid grey;
+        left: 1017px;
+        height: 89vh;
+        top: 90px;
+    }
+}
+
+
+@media (max-width: 1024px) and (max-height: 768px){
+    .marginHeaderBtn{
+        margin-left: 200px !important;
+    }
+    .boxProject{
+    display: inline-block;
+    width:200px;
+    }
+    #box1{
+        position: absolute;
+        left: 4px;
+    }
+    #box2{
+        position: absolute;
+        left: 208px;
+    }
+    #box3{
+        position: absolute;
+        left: 412px;
+    }
+    #box4{
+        position: absolute;
+        left: 616px;
+    }
+    #box5{
+        position: absolute;
+        left: 820px;
+    }
+    h3{
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .list-group{
+        display: block;
+        height: 85vh;
+        overflow-y: scroll;
+    }
+    .list-group-item{
+        border: 0px !important;
+    }
+    .clientText{
+        width: 60px;
+        display: inline-block;
+        padding-left: 10px;
+        font-size: 0.6rem;
+        color: darkgray;
+        height: 15px;
+        word-break: break-all;
+    }
+    .projectText {
+        text-align: right;
+        width: 90px;
+        display: inline-block;
+        padding-right: 10px;
+        font-size: 0.6rem;
+        height: 15px;
+    }
+    .boxInfoProjects{
+        padding: 5px;
+        min-height: 100px;
+        border: 5px solid #62dfc2;
+        border-radius: 2%;
+    }
+    .boxImg1{
+        display: none;
+    }
+    .boxImg2{
+        align-content: center;
+        width: 140px;
+        display: inline-block;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    img{
+        display:none;
+    }
+    .imgDash{
+        display: inline-block;
+        max-width: 210px;
+        height: auto;
+    }
+    .taskLabelProject {
+        height: 30px;
+        border: 1px solid #d4d3d3;
+        border-radius: 2px;
+        margin-bottom: 10px;
+    }
+    .label1 {
+        display: none !important;
+        width: 40px;
+        display: inline-block;
+        font-size: 0.4rem;
+        color: darkgray;
+        text-align: center;
+        position: relative;
+        bottom: 1px;
+    }
+
+    .label2{
+        text-align: center;
+        width: 138px;
+        display: inline-block;
+        font-size: 0.5rem;
+        color: black;
+        height: 20px;
+        word-break: break-all;
+    }
+    .label3{
+        display: none !important;
+        width: 30px;
+        display: inline-block;
+        font-size: 0.4rem;
+        word-break: break-all;
+        height: 10px;
+        color: darkgray;
+        text-align: center;
+        position: relative;
+        bottom: 0px;
+    }
+    #vl1 {
+        position: absolute;
+        border-left: 2px solid grey;
+        left: 204px;
+        height: 89vh;
+        top: 90px;
+    }
+    #vl2 {
+        position: absolute;
+        border-left: 2px solid grey;
+        left: 408px;
+        height: 89vh;
+        top: 90px;
+    }
+    #vl3 {
+        position: absolute;
+        border-left: 2px solid grey;
+        left: 613px;
+        height: 89vh;
+        top: 90px;
+    }
+    #vl4 {
+        position: absolute;
+        border-left: 2px solid grey;
+        left: 817px;
+        height: 89vh;
+        top: 90px;
+    }
+}
+
+
+@media (min-width: 1600px) and (max-height: 900px){
+    .marginHeaderBtn{
+        margin-left: 500px !important;
+    }
+    .boxProject{
+    display: inline-block;
+    width:300px;
+    }
+    #box1{
+        position: absolute;
+        left: 16px;
+    }
+    #box2{
+        position: absolute;
+        left: 332px;
+    }
+    #box3{
+        position: absolute;
+        left: 648px;
+    }
+    #box4{
+        position: absolute;
+        left: 964px;
+    }
+    #box5{
+        position: absolute;
+        left: 1280px;
+    }
+    h3{
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .list-group{
+        display: block;
+        height: 85vh;
+        overflow-y: scroll;
+    }
+    .list-group-item{
+        border: 0px !important;
+    }
+    .clientText{
+        width: 120px;
+        display: inline-block;
+        padding-left: 10px;
+        font-size: 0.6rem;
+        color: darkgray;
+        height: 15px;
+        word-break: break-all;
+    }
+    .projectText {
+        text-align: right;
+        width: 120px;
+        display: inline-block;
+        padding-right: 10px;
+        font-size: 0.6rem;
+        height: 15px;
+    }
+    .boxInfoProjects{
+        padding: 5px;
+        min-height: 100px;
+        border: 5px solid #62dfc2;
+        border-radius: 2%;
+    }
+    .boxImg1{
+        width: 115px;
+        height: 85px;
+        display: inline-block;
+        float: left;
+    }
+    img{
+        width: 50px;
+        height: 42px;
+    }
+    .imgVie{
+        width: 55px !important;
+        height: auto;
+    }
+    .boxImg2{
+        align-content: center;
+        width: 115px;
+        display: inline-block;
+        margin-bottom: 5px;
+
+        text-align: center;
+    }
+    .imgDash{
+        display: inline-block;
+        max-width: 210px;
+        height: auto;
+    }
+    .taskLabelProject {
+        height: 40px;
+        border: 1px solid #d4d3d3;
+        border-radius: 2px;
+        margin-bottom: 10px;
+    }
+    .label1 {
+        width: 50px;
+        display: inline-block;
+        font-size: 0.5rem;
+        color: darkgray;
+        text-align: center;
+        position: relative;
+        bottom: 6px;
+    }
+
+    .label2{
+        text-align: center;
+        width: 140px;
+        display: inline-block;
+        font-size: 0.8rem;
+        color: black;
+        height: 30px;
+        word-break: break-all;
+    }
+    .label3{
+
+        width: 30px;
+        display: inline-block;
+        font-size: 0.5rem;
+        word-break: break-all;
+        height: 10px;
+        color: darkgray;
+        text-align: center;
+        position: relative;
+        bottom: 7px;
+    }
+    #vl1 {
+        position: absolute;
+        border-left: 2px solid grey;
+        left: 324px;
+        height: 89vh;
+        top: 90px;
+    }
+    #vl2 {
+        position: absolute;
+        border-left: 2px solid grey;
+        left: 639px;
+        height: 89vh;
+        top: 90px;
+    }
+    #vl3 {
+        position: absolute;
+        border-left: 2px solid grey;
+        left: 955px;
+        height: 89vh;
+        top: 90px;
+    }
+    #vl4 {
+        position: absolute;
+        border-left: 2px solid grey;
+        left: 1270px;
+        height: 89vh;
+        top: 90px;
+    }
+}
+@media  (min-width: 1366px) and (min-height: 1024px){
+    .boxViewsModalProject{
+        max-height: 60% !important;
+    }
+    .tasksModalProject{
+        height: 8%;
+    }
+    .tasksModalProject{
+        padding-top: 3%;
+    }
+}
+@media  (max-width: 1920px) and (min-height: 1000px){
+    .boxImg1 {
+        width: 50%;
+        height: 85px;
+        display: inline-block;
+        float: left;
+    }
+    .boxImg2 {
+        width: 50%;
+        height: 85px;
+        display: inline-block;
+        float: left;
+    }
+    img {
+        margin-bottom: 2px;
+        width: 48%;
+        height: 42px;
+    }
+}
+
+@media  (min-width: 1921px) and (min-height: 1081px){
+    .boxImg1 {
+        width: 50%;
+        height: 110px;
+        display: inline-block;
+        float: left;
+    }
+    .boxImg2 {
+        width: 50%;
+        height: 110px;
+        display: inline-block;
+        float: left;
+    }
+    img {
+        margin-bottom: 2px;
+        width: 48%;
+        height: 50px;
+    }
+    .imgDash{
+        margin-bottom: 2px;
+        width: 100%;
+        max-height: 110px;
+    }
+
+
+.boxProject{
+    display: inline-block;
+    width:17.5%;
+    height: 90vh;
+}
+#box1{
+    position: absolute;
+    left: 1.7%;
+}
+#box2{
+    position: absolute;
+    left: 22%;
+}
+#box3{
+    position: absolute;
+    left: 42%;
+}
+#box4{
+    position: absolute;
+    left: 62%;
+}
+#box5{
+    position: absolute;
+    left: 81%;
+}
+#vl1 {
+    position: absolute;
+    border-left: 2px solid grey;
+    left: 20.5%;
+    height: 89vh;
+    top: 90px;
+}
+#vl2 {
+    position: absolute;
+    border-left: 2px solid grey;
+    left: 40.5%;
+    height: 89vh;
+    top: 90px;
+}
+#vl3 {
+    position: absolute;
+    border-left: 2px solid grey;
+    left: 60.5%;
+    height: 89vh;
+    top: 90px;
+}
+#vl4 {
+    position: absolute;
+    border-left: 2px solid grey;
+    left: 80.5%;
+    height: 89vh;
+    top: 90px;
+}
+}

@@ -1,0 +1,113 @@
+
+body{
+    padding: 0px;
+}
+header{
+    height: 60px;
+    padding: 20px;
+    background-color: #eff1f4;
+    position: relative;
+    left: 0;
+}
+.marginHeaderBtn{
+    margin-left: 1000px !important;
+}
+.here{
+    font-size: 0.9rem;
+    margin-left: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-decoration: none;
+    background-color: #62dfc2;
+    color: #fff !important;
+    border: 2px solid #62dfc2;
+    height: 20px;
+    width: 80px;
+    border-radius: 15px ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+a:hover {
+    text-decoration: none;
+  }
+.linkHeader{
+    font-size: 0.9rem;
+    margin-left: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 0px;
+    padding-bottom: 2px;
+    text-decoration: none;
+    color: #62dfc2 !important;
+    border: 2px solid #62dfc2;
+    border-radius: 15px ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#userLogo{
+    margin-right: 30px;
+    background-color: #62dfc2;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+#boxUserLogo{
+    display: none;
+    position: absolute;
+    top: 60px;
+    z-index: 999;
+	max-width: 30em;
+    background-color: #fff;
+    color: #62dfc2;
+	padding: 1.125em 1.5em;
+	font-size: 1.25em;
+	border-radius: 1rem;
+    box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+}
+#boxUserLogo::before {
+    content: '';
+    z-index: 999;
+	position: absolute;
+	width: 0;
+	height: 0;
+	bottom: 100%;
+	left: 10%;
+	border: .75rem solid transparent;
+	border-top: none;
+	border-bottom-color: #fff;
+	filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
+}
+@media (max-width: 1366px){
+    .marginHeaderBtn{
+        margin-left: 600px !important;
+    }
+}
+@media (max-width: 1366px) and (max-height: 768px){
+
+    .marginHeaderBtn{
+        margin-left: 600px !important;
+    }
+}
+@media (max-width: 1024px){
+    .marginHeaderBtn{
+        margin-left: 280px !important;
+    }
+}
+@media (max-width: 1280px) and (max-height: 800px){
+    .marginHeaderBtn{
+        margin-left: 500px !important;
+    }
+}
+@media (max-width: 1024px) and (max-height: 768px){
+    .marginHeaderBtn{
+        margin-left: 200px !important;
+    }
+}
+@media (min-width: 1600px) and (max-height: 900px){
+    .marginHeaderBtn{
+        margin-left: 500px !important;
+    }
+}

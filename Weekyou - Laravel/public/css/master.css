@@ -1,0 +1,491 @@
+body {
+    background-color: rgb(239, 241, 244);
+    background-size: 100vw;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: "Muli", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    font-weight: bold;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* .imgProjectSmall{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+} */
+
+
+
+.pauseProject{
+    background-color: darkgray;
+    opacity: 0.7;
+}
+
+.prevBtn2{
+    position: absolute;
+    left: 0;
+
+    top: 20vh;
+    height: 4vh;
+    width: 2vw;
+}
+
+.next2{
+    position: absolute;
+    right: 0;
+    top: 20vh;
+
+    height: 4vh;
+    width: 2vw;
+}
+
+.prevBtn{
+    position: absolute;
+    left: 0;
+
+    top: 24vh;
+    height: 4vh;
+    width: 2vw;
+}
+
+.next{
+    position: absolute;
+    right: 0;
+    top: 30vh;
+    margin-right: 2vw;
+    height: 4vh;
+    width: 2vw;
+}
+
+.admin {
+    overflow: scroll !important;
+    background-color: rgb(239, 241, 244);
+    background-size: 100vw;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: "Muli", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.infoBox {
+    height: 58vh;
+}
+
+.header-base {
+    background-color: rgb(239, 241, 244);
+    font-family: "Muli", sans-serif;
+    font-weight: 500;
+}
+
+ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#mainLG {
+    background-color: rgb(239, 241, 244);
+}
+
+.scroll-reminders::-webkit-scrollbar {
+    display: none;
+}
+.scroll-post::-webkit-scrollbar {
+    display: none;
+}
+.scrollable::-webkit-scrollbar {
+    display: none;
+}
+
+.reminderBox::-webkit-scrollbar {
+    display: none;
+}
+
+.buttons-header-admin{
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(98, 224, 195);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 30px;
+    height: 3vh;
+
+    font-weight: 500;
+    color: rgb(58, 193, 162);
+}
+
+
+.buttons-header {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(98, 224, 195);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 30px;
+    height: 28px;
+
+    font-weight: 500;
+    color: rgb(58, 193, 162);
+}
+.ev-green {
+    background-color: rgb(68, 252, 151, 0.3);
+}
+
+.border-turq {
+    border-color: rgb(98, 224, 195);
+}
+
+.bg-lightGrey {
+    background-color: rgb(239, 241, 244);
+}
+.color-lightGrey {
+    color: rgb(98, 224, 195);
+}
+/* Home */
+.scroll-post {
+    font-family: "Muli", sans-serif;
+}
+
+.border-botBlue {
+    border-bottom: solid 1px rgb(120, 188, 173);
+}
+
+.chat {
+    height: 34vh;
+}
+
+.Tasks {
+    height: 93vh;
+}
+.reminderBox {
+    height: 58vh;
+    overflow-x: hidden;
+}
+
+li {
+    font-size: 13px;
+}
+.posts {
+    height: 93vh;
+}
+
+.scroll-reminders {
+    height: 92%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    word-break: break-all;
+}
+
+
+.scroll-post {
+    height: 92%;
+}
+
+.button-add-reminder {
+    height: 25px;
+}
+
+.button-actions {
+    border: solid 2px rgb(120, 188, 173);
+    height: 25px;
+}
+
+.div-actions {
+    height: 100px;
+}
+
+.day-calendar {
+    background-color: rgb(233, 236, 239);
+}
+
+.dropdownFiltersPost{
+    display: none;
+    transition: 2;
+}
+
+.filtersContent{
+    display: none;
+
+}
+
+.dropdownFiltersPost:hover .filtersContent{
+    opacity: 1;
+}
+
+
+
+.dropdownBox {
+    position: relative;
+    display: inline-block;
+    transition: 2;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdownContent {
+      visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 0.2s linear;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+
+  /*
+   Change color of dropdown links on hover
+  .dropdownContent a:hover {background-color: #ddd;} */
+
+  /* Show the dropdown menu on hover */
+  .dropdownBox:hover .dropdownContent {opacity: 1;visibility: visible;}
+
+.button-reminder {
+    color: rgb(98, 224, 195);
+
+    height: 25px;
+}
+
+#tasksBox {
+    height: 96%;
+}
+
+.scrollable {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    word-break: break-all;
+}
+
+.postInfo {
+    font-family: "Muli", sans-serif;
+    font-size: 10px;
+    font-style: italic;
+}
+
+.postMessage {
+    font-family: "Muli", sans-serif;
+    font-size: 12px;
+    line-height: 1.1;
+}
+
+.postImage {
+    width: 100%;
+}
+
+.taskMessage {
+    font-family: "Muli", sans-serif;
+    font-size: 13px;
+    color: black;
+}
+
+.taskFooter {
+    font-family: "Muli", sans-serif;
+    font-size: 8px;
+    text-transform: uppercase;
+}
+
+
+
+/* Admin */
+
+.boxResource{
+    border-radius: 7%;
+}
+
+.btnResorces{
+        background-color: rgb(255, 255, 255) !important;
+        border-color: rgb(98, 224, 195) !important;
+        border-style: solid !important;
+        border-width: 2px !important;
+        border-radius: 30px !important;
+        height: 25px !important;
+        font-size: 15px !important;
+        font-weight: 500 !important;
+
+        color: rgb(58, 193, 162) !important;
+}
+
+
+.boxBtnHover{
+    padding-top: 3vh !important;
+}
+.nameProject{
+    font-size: 2vh;
+}
+.btnHoversProject{
+
+    padding: 1vh !important;
+}
+.divHeightCarousel{
+    height:48vh !important;
+
+}
+
+.divHeightCarousel2{
+    height:40vh !important;
+
+}
+
+
+
+
+@media (max-width: 1400px) {
+    #tasksBox {
+        height: 94%;
+    }
+    .buttons-header {
+        background-color: rgb(255, 255, 255);
+        border-color: rgb(98, 224, 195);
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 30px;
+        height: 25px;
+        font-size: 15px;
+        font-weight: 500;
+
+        color: rgb(58, 193, 162);
+        margin-bottom: 30px !important;
+    }
+
+    .posts {
+        height: 90vh;
+    }
+    .scroll-post {
+        height: 89%;
+    }
+    .Tasks {
+        height: 90vh;
+    }
+    .reminderBox {
+        height: 55vh;
+        overflow-x: hidden;
+    }
+
+    .reminder-li{
+        width: 100%;
+    }
+
+    .infoBox {
+        height: 55vh;
+    }
+    .scroll-reminders {
+        height: 92%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        word-break: break-all;
+    }
+
+    .boxBtnHover{
+        padding-top: 1vh !important;
+    }
+
+
+}
+
+@media (max-width: 1000px){
+
+.divHeightCarousel{
+    height:48vh !important;
+
+}
+
+.btnHoversProject{
+
+    font-size: 6px !important;
+    height: 5vh !important;
+    padding: 1vh !important;
+}
+
+.nameProject{
+    font-size: 9px !important;
+}
+
+.infoProject{
+    font-size: 8px !important;
+}
+.infoHover{
+    font-size: 8px !important;
+}
+}
+
+@media (max-width: 700px) {
+    .scrollable {
+        height: 60vh;
+        overflow-y: scroll;
+    }
+
+    .scroll-reminders {
+        height: 80vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .scroll-tasks {
+        height: 80vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+
+}
+
+/* Fin Home */
+
+
+
+/* The Modal (background) */
+.modalimg {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 5vh; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+
+  /* Modal Content (Image) */
+  .modalimg-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 1280px;
+  }
+
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding-left: 10px ;
+    height: 150px;
+  }
+
+  /* Add Animation - Zoom in the Modal */
+  .modalimg-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modalimg-content {
+      width: 100%;
+    }
+  }
